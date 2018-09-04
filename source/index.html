@@ -33,25 +33,107 @@
       </div>
     </header>
     <main class="page-main">
+      <h1 class="page-main__title visually-hidden">Туристическое агентство "Рога и Копыта"</h1>
       <section class="best-trips">
         <div class="best-trips__wrapper">
           <span class="best-trips__delails italic-red">Our Agency</span>
-          <h1 class="best-trips__title">Feature Trip</h1>
-          <a class="best-trips__link btn-red" href="#">book now</a>
+          <h2 class="best-trips__title">Feature Trip</h2>
+          <a class="best-trips__link best-trips__link--booking btn-red" href="#" aria-label="забронировать">book now</a>
         </div>
         <div class="best-trips__cities">
-          <div class="best-trips__london">
+          <div class="best-trips__card best-trips__card--london">
             <div class="best-trips__img-wrapper">
               <img class="best-trips__img" src="#" alt="лондон">
               <p class="best-trips__name">London, England</p>
             </div>
             <div class="best-trips__rating-wrapper">
-              <form class="best-trips__rating-form" action="index.html" method="post">
-                <fieldset>
-                  <legend>Rating:</legend>
-                  <input type="radio" name="" value="1">
-                </fieldset>
+              <form class="best-trips__form rating-form" action="index.html" method="get">
+                <label class="rating-form__label">Rating:</label>
+                <input class="rating-form__input" type="radio" id="1" name="london" value="1">
+                <input class="rating-form__input" type="radio" id="2" name="london" value="2">
+                <input class="rating-form__input" type="radio" id="3" name="london" value="3">
+                <input class="rating-form__input" type="radio" id="4" name="london" value="4">
+                <input class="rating-form__input" type="radio" id="5" name="london" value="5">
               </form>
+            </div>
+            <a class="best-trips__link best-trips__link--discover btn-red" href="#">Discover</a>
+          </div>
+          <div class="best-trips__card best-trips__card--dubai">
+            <div class="best-trips__img-wrapper">
+              <img class="best-trips__img" src="#" alt="дубаи">
+              <p class="best-trips__name">Dubai, UAE</p>
+            </div>
+            <div class="best-trips__rating-wrapper">
+              <form class="best-trips__form rating-form" action="index.html" method="get">
+                <label class="rating-form__label">Rating:</label>
+                <input class="rating-form__input" type="radio" id="1" name="dubai" value="1">
+                <input class="rating-form__input" type="radio" id="2" name="dubai" value="2">
+                <input class="rating-form__input" type="radio" id="3" name="dubai" value="3">
+                <input class="rating-form__input" type="radio" id="4" name="dubai" value="4">
+                <input class="rating-form__input" type="radio" id="5" name="dubai" value="5">
+              </form>
+            </div>
+            <a class="best-trips__link best-trips__link--discover btn-red" href="#">Discover</a>
+          </div>
+          <div class="best-trips__card best-trips__card--bern">
+            <div class="best-trips__img-wrapper">
+              <img class="best-trips__img" src="#" alt="берн">
+              <p class="best-trips__name">Bern, Switzerland</p>
+            </div>
+            <div class="best-trips__rating-wrapper">
+              <form class="best-trips__form rating-form" action="index.html" method="get">
+                <label class="rating-form__label">Rating:</label>
+                <input class="rating-form__input" type="radio" id="1" name="bern" value="1">
+                <input class="rating-form__input" type="radio" id="2" name="bern" value="2">
+                <input class="rating-form__input" type="radio" id="3" name="bern" value="3">
+                <input class="rating-form__input" type="radio" id="4" name="bern" value="4">
+                <input class="rating-form__input" type="radio" id="5" name="bern" value="5">
+              </form>
+            </div>
+            <a class="best-trips__link best-trips__link--discover btn-red" href="#">Discover</a>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="convenience">
+          <h2 class="convenience__title convenience__title--main">Provide Packege</h2>
+          <p class="convenience__details">Convenience</p>
+          <div class="convenience__wrapper">
+            <span class="convenience__arrow convenience__arrow--back"></span>
+            <div class="convenience__card convenience__card--facilities">
+              <h3 class="convenience__title convenience__title--additional">Hotel Facilities</h3>
+              <p class="convenience__text">you are going to use a passage of Lorem Ipsum, you need to be there isn't anything embarrassing hidden in the middle of text avaible,</p>
+            </div>
+            <div class="convenience__card convenience__card--guide">
+              <h3 class="convenience__title convenience__title--additional">Tourist Guide</h3>
+              <p class="convenience__text">you are going to use a passage of Lorem Ipsum, you need to be there isn't anything embarrassing hidden in the middle of text avaible,</p>
+            </div>
+            <div class="convenience__card convenience__card--ticket">
+              <h3 class="convenience__title convenience__title--additional">Air Ticket</h3>
+              <p class="convenience__text">you are going to use a passage of Lorem Ipsum, you need to be there isn't anything embarrassing hidden in the middle of text avaible,</p>
+            </div>
+            <span class="convenience__arrow convenience__arrow--forward"></span>
+          </div>
+        </div>
+        <div class="care">
+          <h2 class="care__title care__title--main">We Take Best Care</h2>
+          <p class="care__details">Why Choose Us?</p>
+          <div class="care__wrapper">
+            <div class="care__card care__card--rooms">
+              <h3 class="care__title care__title--additional">Unlimited Room Available.</h3>
+              <p class="care__text">Accusamus et iusto odio bolo dignissimos  ducimus qui lawer blandits praesentium Accus amus et iusto odio bol Accus amus et iusto odio bol .</p>
+            </div>
+            <div class="care__card care__card--packege">
+              <h3 class="care__title care__title--additional">Custome Packege Available.</h3>
+              <p class="care__text">Accusamus et iusto odio bolo dignissimos  ducimus qui lawer blandits praesentium Accus amus et iusto odio bol Accus amus et iusto odio bol .</p>
+            </div>
+            <div class="care__card care__card--ticket">
+              <h3 class="care__title convenience__title--additional">Air / Bus Ticket Provide By Us.</h3>
+              <p class="care__text">Accusamus et iusto odio bolo dignissimos  ducimus qui lawer blandits praesentium Accus amus et iusto odio bol Accus amus et iusto odio bol .</p>
+            </div>
+            <div class="care__card care__card--journey">
+              <h3 class="care__title care__title--additional">100% Safe and Luxury Journey.</h3>
+              <p class="care__text">Accusamus et iusto odio bolo dignissimos  ducimus qui lawer blandits praesentium Accus amus et iusto odio bol Accus amus et iusto odio bol .</p>
             </div>
           </div>
         </div>
