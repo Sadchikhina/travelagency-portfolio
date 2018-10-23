@@ -9,95 +9,99 @@
     <meta name="description" content="">
   </head>
   <body>
-    <header class="page-header">
-      <p class="page-header__logo"><img class="page-header__img" src="#" alt="логотип">Mocco group<span class="page-header__new-line"></span></p>
-      <nav class="header-nav">
-        <ul class="header-nav__list cite-nav">
-          <li class="cite-nav__item cite-nav__item--active"><a class=" cite-nav__link" href="#">home</a></li>
-          <li class="cite-nav__item cite-nav__item"><a class="nav-list__link" href="#">about</a></li>
-          <li class="cite-nav__item cite-nav__item--tour"><a class="nav-list__link" href="#">tour</a></li>
-          <li class="cite-nav__item cite-nav__item--hotels"><a class="nav-list__link" href="#">hotels</a></li>
-          <li class="cite-nav__item cite-nav__item"><a class="nav-list__link" href="#">blog</a></li>
-          <li class="cite-nav__item cite-nav__item"><a class="nav-list__link" href="#">contact</a></li>
-          <li class="cite-nav__item cite-nav__item--search"></li>
-        </ul>
-        <a class="page-header__link btn-red" href="#">book now</a>
-      </nav>
-      <div class="banner">
-        <div class="banner__wrapper">
-          <span class="banner__title italic-red">World Best Travel Agency</span>
+    <header class="section page-header">
+      <div class="section__inner">
+        <p class="page-header__logo"><img class="page-header__img" src="#" alt="логотип">Mocco group<span class="page-header__new-line"></span></p>
+        <nav class="header-nav">
+          <ul class="header-nav__list cite-nav">
+            <li class="cite-nav__item cite-nav__item--active"><a class=" cite-nav__link" href="#">home</a></li>
+            <li class="cite-nav__item cite-nav__item"><a class="nav-list__link" href="#">about</a></li>
+            <li class="cite-nav__item cite-nav__item--tour"><a class="nav-list__link" href="#">tour</a></li>
+            <li class="cite-nav__item cite-nav__item--hotels"><a class="nav-list__link" href="#">hotels</a></li>
+            <li class="cite-nav__item cite-nav__item"><a class="nav-list__link" href="#">blog</a></li>
+            <li class="cite-nav__item cite-nav__item"><a class="nav-list__link" href="#">contact</a></li>
+            <li class="cite-nav__item cite-nav__item--search"></li>
+          </ul>
+          <a class="page-header__link btn-red" href="#">book now</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title visually-hidden">Туристическое агентство "Рога и Копыта"</h1>
+      <div class="section banner">
+        <div class="section__inner banner__wrapper">
+          <p class="banner__delails italic italic--red">World Best Travel Agency</p>
           <p class="banner__saving">Save Upto 40% For Upcoming Summer</p>
           <p class="banner__price">Starts From $250 Only (2 Days, 3 Nights)</p>
         </div>
         <a class="banner__link btn-red" href="#">book now</a>
       </div>
-    </header>
-    <main class="page-main">
-      <h1 class="page-main__title visually-hidden">Туристическое агентство "Рога и Копыта"</h1>
-      <section class="best-trips">
-        <div class="best-trips__wrapper">
-          <span class="best-trips__delails italic-red">Our Agency</span>
-          <h2 class="best-trips__title">Feature Trip</h2>
-          <a class="best-trips__link best-trips__link--booking btn-red" href="#" aria-label="забронировать">book now</a>
-        </div>
-        <div class="best-trips__cities">
-          <div class="best-trips__card best-trips__card--london">
-            <div class="best-trips__img-wrapper">
-              <img class="best-trips__img" src="#" alt="лондон">
-              <p class="best-trips__name">London, England</p>
-            </div>
-            <div class="best-trips__rating-wrapper">
-              <form class="best-trips__form rating-form" action="index.html" method="get">
-                <label class="rating-form__label">Rating:</label>
-                <input class="rating-form__input" type="radio" id="1" name="london" value="1">
-                <input class="rating-form__input" type="radio" id="2" name="london" value="2">
-                <input class="rating-form__input" type="radio" id="3" name="london" value="3">
-                <input class="rating-form__input" type="radio" id="4" name="london" value="4">
-                <input class="rating-form__input" type="radio" id="5" name="london" value="5">
-              </form>
-              <a class="best-trips__link best-trips__link--discover btn-red" href="#">Discover</a>
-            </div>
+      <section class="section best-trips">
+        <div class="section__inner">
+          <div class="best-trips__wrapper">
+            <p class="best-trips__delails italic italic--red">Our Agency</p>
+            <h2 class="best-trips__title title">Feature Trip</h2>
+            <a class="best-trips__link best-trips__link--booking btn-red" href="#" aria-label="забронировать">book now</a>
           </div>
-          <div class="best-trips__card best-trips__card--dubai">
-            <div class="best-trips__img-wrapper">
-              <img class="best-trips__img" src="#" alt="дубаи">
-              <p class="best-trips__name">Dubai, UAE</p>
+          <div class="best-trips__cities">
+            <div class="best-trips__card best-trips__card--london">
+              <div class="best-trips__img-wrapper">
+                <img class="best-trips__img" src="#" alt="лондон">
+                <p class="best-trips__name">London, England</p>
+              </div>
+              <div class="best-trips__rating-wrapper">
+                <form class="best-trips__form rating-form" action="index.html" method="get">
+                  <label class="rating-form__label">Rating:</label>
+                  <input class="rating-form__input" type="radio" id="1" name="london" value="1">
+                  <input class="rating-form__input" type="radio" id="2" name="london" value="2">
+                  <input class="rating-form__input" type="radio" id="3" name="london" value="3">
+                  <input class="rating-form__input" type="radio" id="4" name="london" value="4">
+                  <input class="rating-form__input" type="radio" id="5" name="london" value="5">
+                </form>
+                <a class="best-trips__link best-trips__link--discover btn-red" href="#">Discover</a>
+              </div>
             </div>
-            <div class="best-trips__rating-wrapper">
-              <form class="best-trips__form rating-form" action="index.html" method="get">
-                <label class="rating-form__label">Rating:</label>
-                <input class="rating-form__input" type="radio" id="1" name="dubai" value="1">
-                <input class="rating-form__input" type="radio" id="2" name="dubai" value="2">
-                <input class="rating-form__input" type="radio" id="3" name="dubai" value="3">
-                <input class="rating-form__input" type="radio" id="4" name="dubai" value="4">
-                <input class="rating-form__input" type="radio" id="5" name="dubai" value="5">
-              </form>
-              <a class="best-trips__link best-trips__link--discover btn-red" href="#">Discover</a>
+            <div class="best-trips__card best-trips__card--dubai">
+              <div class="best-trips__img-wrapper">
+                <img class="best-trips__img" src="#" alt="дубаи">
+                <p class="best-trips__name">Dubai, UAE</p>
+              </div>
+              <div class="best-trips__rating-wrapper">
+                <form class="best-trips__form rating-form" action="index.html" method="get">
+                  <label class="rating-form__label">Rating:</label>
+                  <input class="rating-form__input" type="radio" id="1" name="dubai" value="1">
+                  <input class="rating-form__input" type="radio" id="2" name="dubai" value="2">
+                  <input class="rating-form__input" type="radio" id="3" name="dubai" value="3">
+                  <input class="rating-form__input" type="radio" id="4" name="dubai" value="4">
+                  <input class="rating-form__input" type="radio" id="5" name="dubai" value="5">
+                </form>
+                <a class="best-trips__link best-trips__link--discover btn-red" href="#">Discover</a>
+              </div>
             </div>
-          </div>
-          <div class="best-trips__card best-trips__card--bern">
-            <div class="best-trips__img-wrapper">
-              <img class="best-trips__img" src="#" alt="берн">
-              <p class="best-trips__name">Bern, Switzerland</p>
-            </div>
-            <div class="best-trips__rating-wrapper">
-              <form class="best-trips__form rating-form" action="index.html" method="get">
-                <label class="rating-form__label">Rating:</label>
-                <input class="rating-form__input" type="radio" id="1" name="bern" value="1">
-                <input class="rating-form__input" type="radio" id="2" name="bern" value="2">
-                <input class="rating-form__input" type="radio" id="3" name="bern" value="3">
-                <input class="rating-form__input" type="radio" id="4" name="bern" value="4">
-                <input class="rating-form__input" type="radio" id="5" name="bern" value="5">
-              </form>
-              <a class="best-trips__link best-trips__link--discover btn-red" href="#">Discover</a>
+            <div class="best-trips__card best-trips__card--bern">
+              <div class="best-trips__img-wrapper">
+                <img class="best-trips__img" src="#" alt="берн">
+                <p class="best-trips__name">Bern, Switzerland</p>
+              </div>
+              <div class="best-trips__rating-wrapper">
+                <form class="best-trips__form rating-form" action="index.html" method="get">
+                  <label class="rating-form__label">Rating:</label>
+                  <input class="rating-form__input" type="radio" id="1" name="bern" value="1">
+                  <input class="rating-form__input" type="radio" id="2" name="bern" value="2">
+                  <input class="rating-form__input" type="radio" id="3" name="bern" value="3">
+                  <input class="rating-form__input" type="radio" id="4" name="bern" value="4">
+                  <input class="rating-form__input" type="radio" id="5" name="bern" value="5">
+                </form>
+                <a class="best-trips__link best-trips__link--discover btn-red" href="#">Discover</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="advantages">
-        <div class="convenience">
-          <h2 class="convenience__title convenience__title--main">Provide Packege</h2>
-          <p class="convenience__details">Convenience</p>
+      <section class="section advantages">
+        <div class="section__inner convenience">
+          <p class="convenience__delails italic italic--red">Provide Packege</p>
+          <h2 class="convenience__title convenience__title--main title">Convenience</h2>
           <div class="convenience__wrapper">
             <span class="convenience__arrow convenience__arrow--back"></span>
             <div class="convenience__card convenience__card--facilities">
@@ -115,9 +119,9 @@
             <span class="convenience__arrow convenience__arrow--forward"></span>
           </div>
         </div>
-        <div class="care">
-          <h2 class="care__title care__title--main">We Take Best Care</h2>
-          <p class="care__details">Why Choose Us?</p>
+        <div class="section__inner care">
+          <p class="care__details italic italic--red">We Take Best Care</p>
+          <h2 class="care__title care__title--main title">Why Choose Us?</h2>
           <div class="care__wrapper">
             <div class="care__card care__card--rooms">
               <h3 class="care__title care__title--additional">Unlimited Room Available.</h3>
@@ -138,9 +142,10 @@
           </div>
         </div>
       </section>
-      <section class="top-tour">
-        <h2 class="top-tour__title">Our Agency Provide<span class="top-tour__bold">Top Tour Packege</span></h2>
-        <div class="top-tour__wrapper">
+      <section class="section top-tour">
+        <div class="section__inner top-tour__wrapper">
+          <p class="top-tour__details italic italic--red">Our Agency Provide</p>
+          <h2 class="top-tour__title title title--white">Top Tour Packege</h2>
           <ul class="top-tour__list tour-list">
             <li class="tour-list__item tour-list__item--not-active">
               <span class="tour-list__transport tour-list__transport--air">BY AIR</span>
@@ -294,7 +299,7 @@
             </li>
           </ul>
         </div>
-        <div class="top-tour__form booking">
+        <div class="section__inner top-tour__form booking">
           <h3 class="booking__title">CUSTOME PACKEGE</h3>
           <form class="booking__form" action="index.html" method="get">
             <p class="booking__location location-input">
@@ -327,6 +332,283 @@
           </form>
         </div>
       </section>
+      <section class="section best-countries">
+        <div class="section__inner">
+          <p class="best-countries__details italic italic--red">Our Agency Provide Worldwide</p>
+          <h2 class="best-countries__title best-countries__title--main title">Best Tourist Place</h2>
+          <p class="best-countries__description">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness no oncauwho do not know that.</p>
+          <div class="best-countries__wrapper">
+            <div class="best-countries__item">
+              <h3 class="best-countries__title best-countries__title--additional">Europe (12 Countries)</h3>
+              <ul class="best-countries__list countries-list">
+                <li class="countries-list__item">Belgium.</li>
+                <li class="countries-list__item">Germany.</li>
+                <li class="countries-list__item">Spain.</li>
+                <li class="countries-list__item">Ireland.</li>
+                <li class="countries-list__item">France.</li>
+                <li class="countries-list__item">Iceland.</li>
+                <li class="countries-list__item">Switzerland.</li>
+                <li class="countries-list__item">Denmark.</li>
+                <li class="countries-list__item">Croatia.</li>
+                <li class="countries-list__item">Italy.</li>
+                <li class="countries-list__item">Netherlands.</li>
+                <li class="countries-list__item">Latvia.</li>
+              </ul>
+            </div>
+            <div class="best-countries__item">
+              <h3 class="best-countries__title best-countries__title--additional">Asia (10 Countries)</h3>
+              <ul class="best-countries__list countries-list">
+                <li class="countries-list__item">Bangladesh.</li>
+                <li class="countries-list__item">India.</li>
+                <li class="countries-list__item">Singapore.</li>
+                <li class="countries-list__item">Nepal.</li>
+                <li class="countries-list__item">Malaysia.</li>
+                <li class="countries-list__item">Pakistan.</li>
+                <li class="countries-list__item">Philippines.</li>
+                <li class="countries-list__item">Myanmar.</li>
+                <li class="countries-list__item">Indonesia.</li>
+                <li class="countries-list__item">Timor-Leste.</li>
+                <li class="countries-list__item">United Arab Emirates.</li>
+              </ul>
+            </div>
+            <div class="best-countries__item">
+              <h3 class="best-countries__title best-countries__title--additional">Australia (9 Countries)</h3>
+              <ul class="best-countries__list countries-list">
+                <li class="countries-list__item">Australia.</li>
+                <li class="countries-list__item">Cook Islands.</li>
+                <li class="countries-list__item">Fiji.</li>
+                <li class="countries-list__item">American Samoa.</li>
+                <li class="countries-list__item">Howland Island.</li>
+                <li class="countries-list__item">Nauru.</li>
+                <li class="countries-list__item">Norfolk Island.</li>
+                <li class="countries-list__item">Croatia.</li>
+                <li class="countries-list__item">Northern Mariana Islands.</li>
+              </ul>
+            </div>
+            <div class="best-countries__item">
+              <h3 class="best-countries__title best-countries__title--additional">Africa (12 Countries)</h3>
+              <ul class="best-countries__list countries-list">
+                <li class="countries-list__item">Tunisia.</li>
+                <li class="countries-list__item">Ghana.</li>
+                <li class="countries-list__item">Uganda.</li>
+                <li class="countries-list__item">Ivory Coast.</li>
+                <li class="countries-list__item">Botswana.</li>
+                <li class="countries-list__item">Chad.</li>
+                <li class="countries-list__item">Mauritius.</li>
+                <li class="countries-list__item">Mauritania.</li>
+                <li class="countries-list__item">Swaziland.</li>
+                <li class="countries-list__item">Gambia.</li>
+                <li class="countries-list__item">Djibouti.</li>
+                <li class="countries-list__item">Nigeria.</li>
+              </ul>
+            </div>
+            <div class="best-countries__item">
+              <h3 class="best-countries__title best-countries__title--additional">N. America (10 Countries)</h3>
+              <ul class="best-countries__list countries-list">
+                <li class="countries-list__item">United States.</li>
+                <li class="countries-list__item">Canada.</li>
+                <li class="countries-list__item">Mexico.</li>
+                <li class="countries-list__item">Cuba.</li>
+                <li class="countries-list__item">Guatemala.</li>
+                <li class="countries-list__item">Panama.</li>
+                <li class="countries-list__item">Nicaragua.</li>
+                <li class="countries-list__item">The Bahamas.</li>
+                <li class="countries-list__item">Belize.</li>
+                <li class="countries-list__item">Antigua and Barbuda.</li>
+              </ul>
+            </div>
+            <div class="best-countries__item">
+              <h3 class="best-countries__title best-countries__title--additional">S. America (11 Countries)</h3>
+              <ul class="best-countries__list countries-list">
+                <li class="countries-list__item">Argentina.</li>
+                <li class="countries-list__item">Chile.</li>
+                <li class="countries-list__item">Bolivia.</li>
+                <li class="countries-list__item">Brazil.</li>
+                <li class="countries-list__item">Colombia.</li>
+                <li class="countries-list__item">Costa Rica.</li>
+                <li class="countries-list__item">Guatemala.</li>
+                <li class="countries-list__item">Peru.</li>
+                <li class="countries-list__item">Venezuela.</li>
+                <li class="countries-list__item">Paraguay.</li>
+                <li class="countries-list__item">Uruguay.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section statistic">
+        <div class="section__inner statistic__wrapper">
+          <h2 class="statistic__title visually-hidden">Statistic</h2>
+          <ul class="statistic__list statistic-list">
+            <li class="statistic-list__item statistic-list__item--client">
+              <p class="statistic-list__numbers">2580+</p>
+              <p class="statistic-list__text">Happy Client</p>
+            </li>
+            <li class="statistic-list__item statistic-list__item--member">
+              <p class="statistic-list__numbers">1880+</p>
+              <p class="statistic-list__text">Online Member</p>
+            </li>
+            <li class="statistic-list__item statistic-list__item--tour">
+              <p class="statistic-list__numbers">2212+</p>
+              <p class="statistic-list__text">Complete Tour</p>
+            </li>
+            <li class="statistic-list__item statistic-list__item--award">
+              <p class="statistic-list__numbers">250+</p>
+              <p class="statistic-list__text">Award Wining</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section memorial">
+        <div class="section__inner video-tour">
+          <h2 class="video-tour__title">Video Tour</h2>
+        </div>
+        <div class="section__inner feedback">
+          <p class="feedback__delails italic italic--black">Tour Memorial History</p>
+          <h2 class="feedback__title title title--white">Client Feedback</h2>
+          <div class="feedback__wrapper">
+            <span class="feedback__arrow feedback__arrow--back"></span>
+            <div class="feedback__item">
+              <img src="#" alt="Dee C.Mendez">
+              <div class="feedback__text-wrapper">
+                <p class="feedback__text">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you a complete account of the  no oncauwho do not know that.</p>
+                <div class="feedback__rating-wrapper">
+                  <div class="feedback__author">
+                    <p class="feedback__name">Dee C.Mendez</p>
+                    <p class="feedback__profession">Graphic Designer</p>
+                  </div>
+                  <form class="feedback__form rating-form" action="index.html" method="get">
+                    <label class="rating-form__label">Pesonal Rating:</label>
+                    <input class="rating-form__input" type="radio" id="1" name="london" value="1">
+                    <input class="rating-form__input" type="radio" id="2" name="london" value="2">
+                    <input class="rating-form__input" type="radio" id="3" name="london" value="3">
+                    <input class="rating-form__input" type="radio" id="4" name="london" value="4">
+                    <input class="rating-form__input" type="radio" id="5" name="london" value="5">
+                  </form>
+                </div>
+              </div>
+            </div>
+            <span class="feedback__arrow feedback__arrow--next"></span>
+          </div>
+        </div>
+      </section>
+      <section class="section blog">
+        <div class="section__inner">
+          <p class="blog__delails italic italic--red">Our Agency</p>
+          <h2 class="blog__title title">Latest Blog</h2>
+          <div class="blog__wrapper">
+            <div class="blog__item">
+              <img src="#" alt="preview">
+              <h3 class="blog__article-title">Always free from repetition.</h3>
+              <p class="blog__text">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you a complete account of the  no oncauwho do not know that.</p>
+              <div class="blog__time-wrapper">
+                <p class="blog__date">25 Dec 18</p>
+                <p class="blog__time">4:15</p>
+              </div>
+            </div>
+            <div class="blog__item">
+              <img src="#" alt="preview">
+              <h3 class="blog__article-title">Always free from repetition.</h3>
+              <p class="blog__text">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you a complete account of the  no oncauwho do not know that.</p>
+              <div class="blog__time-wrapper">
+                <p class="blog__date">25 Dec 18</p>
+                <p class="blog__time">4:15</p>
+              </div>
+            </div>
+            <div class="blog__item">
+              <img src="#" alt="preview">
+              <h3 class="blog__article-title">Always free from repetition.</h3>
+              <p class="blog__text">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you a complete account of the  no oncauwho do not know that.</p>
+              <div class="blog__time-wrapper">
+                <p class="blog__date">25 Dec 18</p>
+                <p class="blog__time">4:15</p>
+              </div>
+            </div>
+            <div class="blog__item">
+              <img src="#" alt="preview">
+              <h3 class="blog__article-title">Always free from repetition.</h3>
+              <p class="blog__text">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you a complete account of the  no oncauwho do not know that.</p>
+              <div class="blog__time-wrapper">
+                <p class="blog__date">25 Dec 18</p>
+                <p class="blog__time">4:15</p>
+              </div>
+            </div>
+          </div>
+          <button class="blog__button btn-red" type="button">see all >></button>
+        </div>
+      </section>
+      <section class="section application">
+        <div class="section__inner application__wrapper">
+          <h2 class="application__title">Download Our Offical Apps</h2>
+          <p class="application__text">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you a complete account of the  no oncauwho do not know that.</p>
+          <div class="application__links-wrapper">
+            <a class="application__link application__link--android btn-red" href="#">Available in PLAY STORE</a>
+            <a class="application__link application__link--apple btn-red" href="#">Available in APPLE ISO</a>
+          </div>
+        </div>
+      </section>
+      <section class="section partners">
+        <div class="section__inner partners__wrapper">
+          <p class="partners__delails italic italic--red">Our Agency</p>
+          <h2 class="partners__title title">Branding Partner</h2>
+          <ul class="partners__list partners-list">
+            <li class="partners-list__item">
+              <a class="partners-list__link" href="#"><img src="#" alt="partners-logo"></a>
+            </li>
+            <li class="partners-list__item">
+              <a class="partners-list__link" href="#"><img src="#" alt="partners-logo"></a>
+            </li>
+            <li class="partners-list__item">
+              <a class="partners-list__link" href="#"><img src="#" alt="partners-logo"></a>
+            </li>
+            <li class="partners-list__item">
+              <a class="partners-list__link" href="#"><img src="#" alt="partners-logo"></a>
+            </li>
+            <li class="partners-list__item">
+              <a class="partners-list__link" href="#"><img src="#" alt="partners-logo"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section subscription">
+        <div class="section__inner subscription__wrapper">
+          <div class="subscription__text-wrapper">
+            <h2 class="subscription__title">Subscribe Our NewsLetter</h2>
+            <p class="subscription__text">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you a complete account of the  no oncauwho do not know that.</p>
+          </div>
+          <form class="subscription__form subscription-form" action="index.html" method="post">
+            <input class="subscription-form__field" type="email" name="email" placeholder="Enter Email Addres">
+            <button class="subscription-form__button" type="button"></button>
+          </form>
+        </div>
+      </section>
+      <section class="section message">
+        <div class="section__inner message__wrapper">
+          <p class="message__delails italic italic--red">We are ready to help you</p>
+          <h2 class="message__title title">Your Message</h2>
+          <form class="message__form message-form" action="#" method="post">
+            <div class="message-form__left-column">
+              <input class="message-form__field" type="text" name="yourname" placeholder="Your Full Name" required>
+              <input class="message-form__field" type="text" name="youraddress" placeholder="Address Here">
+              <input class="message-form__field" type="text" name="phone-email" placeholder="Email / Phone Number" required>
+            </div>
+            <div class="message-form__right-column">
+              <textarea class="message-form__field message-form__field--text-area" name="commentfield" rows="4" cols="60" placeholder="Your Message"></textarea>
+            </div>
+            <button class="message-form__button btn-red" type="submit" name="submit-button" aria-label="Submitted">Submitted</button>
+          </form>
+        </div>
+      </section>
     </main>
+    <footer class="section page-footer">
+      <div class="section__inner page-footer__wrapper">
+        <div class="page-footer__column-left">
+          <p class="page-footer__logo"><img class="page-footer__img" src="#" alt="логотип">Mocco group<span class="page-footer__new-line"></span></p>
+          <p class="page-footer__text">Pleasure and praising pain was born and I will give you a complete account of the system, human happiness Pleasure and praising pain was born and I will give you a complete account of the  no oncauwho do not know that.</p>
+
+        </div>
+
+      </div>
+    </footer>
   </body>
 </html>
