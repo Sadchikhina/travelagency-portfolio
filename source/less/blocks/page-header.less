@@ -1,5 +1,12 @@
-.page-header__wrapper {
+.page-header {
   background-image: url("../img/banner__bg.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 980px;
+}
+
+.page-header__wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -8,10 +15,23 @@
   display: flex;
 }
 
+.page-header__img {
+  align-self: center;
+  width: 50px;
+  height: 39px;
+  margin-right: 5px;
+}
+
 .page-header__link {
   width: 150px;
 }
 
 .page-header__new-line {
   display: block;
+  font-size: 10px;
+}
+
+.page-header__text {
+  font-weight: bold;
+  font-size: 14px;
 }

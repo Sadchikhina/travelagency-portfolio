@@ -4,10 +4,26 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-right: 20px;
 }
 
 .cite-nav__item {
   a {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
     color: @black;
+  }
+
+  &:hover {
+    a {
+      color: @rose;
+    }
+  }
+
+  &--search:hover {
+    svg {
+      fill: @rose;
+    }
   }
 }
