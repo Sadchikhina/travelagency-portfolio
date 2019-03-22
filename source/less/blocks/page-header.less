@@ -1,12 +1,16 @@
 .page-header {
-  background-image: url("../img/banner__bg.jpg");
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
+  position: relative;
   height: 980px;
 }
 
 .page-header__wrapper {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  z-index: 10;
+}
+
+.page-header__content-wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -26,12 +30,14 @@
   width: 150px;
 }
 
-.page-header__new-line {
-  display: block;
-  font-size: 10px;
-}
-
 .page-header__text {
+  font-family: "Open Sans";
   font-weight: bold;
   font-size: 14px;
+}
+
+.page-header__new-line {
+  display: block;
+  font-weight: normal;
+  font-size: 10px;
 }
