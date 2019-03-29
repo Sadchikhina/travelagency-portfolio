@@ -1,4 +1,5 @@
 .best-trips__wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -19,13 +20,37 @@
 }
 
 .best-trips__cities {
+  position: absolute;
+  top: -80px;
+  right: 0;
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 75%;
+  z-index: 10;
 }
 
 .best-trips__card {
   width: 30%;
   heigth: 520px;
-  outline: 1px solid @black;
+  border-radius: 20px;
+}
+
+.best-trips__frame {
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  border-radius: 5px 5px 0 0;
+
+  &--london {
+    background-image: url("../img/london.jpg");
+  }
+
+  &--dubai {
+    background-image: url("../img/dubai.jpg");
+  }
+
+  &--bern {
+    background-image: url("../img/switzerland.jpg");
+  }
+
 }
