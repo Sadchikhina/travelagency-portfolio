@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 250px;
 }
 
 .best-trips__text-wrapper {
@@ -14,8 +15,15 @@
 }
 
 .best-trips__link {
+  width: 70%;
   &--booking {
     width: 70%;
+  }
+
+  &--discover {
+    text-transform: capitalize;
+    width: 40%;
+    height: 25px;
   }
 }
 
@@ -33,6 +41,7 @@
   width: 30%;
   heigth: 520px;
   border-radius: 20px;
+  box-shadow: 2px 2px 5px 0 @grey-border;
 }
 
 .best-trips__frame {
@@ -52,5 +61,21 @@
   &--bern {
     background-image: url("../img/switzerland.jpg");
   }
+}
 
+.best-trips__name {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid @grey-border;
+}
+
+.best-trips__rating-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
