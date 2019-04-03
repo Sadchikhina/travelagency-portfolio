@@ -1,7 +1,6 @@
 .tour-list {
   .list();
 
-
   display: flex;
   justify-content: space-between;
 }
@@ -54,4 +53,67 @@
   min-width: 100%;
   min-height: 100%;
   max-width: 100vw;
+}
+
+.tour-list__wrapper {
+  padding: 5px;
+}
+
+.tour-list__top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tour-list__bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tour-list__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.tour-list__text {
+  font-family: "Poppins";
+  font-size: 14px;
+  color: @grey;
+}
+
+.tour-list__price {
+  text-align: right;
+}
+
+.tour-list__full-price {
+  font-size: 14px;
+  color: @rose;
+  margin: 0;
+  padding: 0;
+}
+
+.tour-list__lower-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: @blue;
+  margin: 0;
+  padding: 0;
+}
+
+.tour-list__duration {
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: right;  
+}
+
+.tour-list__asteriks {
+  color: @rose;
+}
+
+.tour-list__days,
+.tour-list__nights {
+  margin: 0;
+  padding: 0;
 }

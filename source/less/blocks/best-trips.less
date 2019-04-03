@@ -40,27 +40,25 @@
 .best-trips__card {
   width: 30%;
   heigth: 520px;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 2px 2px 5px 0 @grey-border;
+  overflow: hidden;
 }
 
 .best-trips__frame {
+  position: relative;
   width: 100%;
   height: 400px;
-  background-position: center;
-  border-radius: 5px 5px 0 0;
+}
 
-  &--london {
-    background-image: url("../img/london.jpg");
-  }
-
-  &--dubai {
-    background-image: url("../img/dubai.jpg");
-  }
-
-  &--bern {
-    background-image: url("../img/switzerland.jpg");
-  }
+.best-trips__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100vw;
 }
 
 .best-trips__name {
