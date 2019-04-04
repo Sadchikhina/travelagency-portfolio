@@ -1,0 +1,116 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  background-color: @white;
+  border: 15px solid @grey-border;
+  padding-left: 20px;
+}
+
+.form__input {
+  position: relative;
+  padding-left: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 200px;
+    width: 1px;
+    height: 75px;
+    background-color: @grey-border;
+  }
+
+  &--location {
+    &::before {
+      background-image: url("../img/location.png");
+    }
+  }
+
+  &--checkin {
+    &::before {
+      background-image: url("../img/check-in.png");
+    }
+  }
+
+  &--checkout {
+    &::before {
+      background-image: url("../img/check-out.png");
+    }
+  }
+
+  &--people {
+    &::before {
+      background-image: url("../img/people.png");
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.form__input:active .form__field {
+  display: block;
+}
+
+.form__label {
+  position: relative;
+  color: @grey;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/arrow-bot-grey.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--location {
+    &::after {
+      display: none;
+    }
+  }
+
+  &--checkin {
+    &::after {
+      left: 75px;
+    }
+  }
+
+  &--checkout {
+    &::after {
+      left: 86px;
+    }
+  }
+
+  &--people {
+    &::after {
+      left: 60px;
+    }
+  }
+}
+
+.form__field {
+  position: absolute;
+  display: none;
+}
+
+.form__button {
+  padding: 26px;
+  border-radius: 0;
+}
