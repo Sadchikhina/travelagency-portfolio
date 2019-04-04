@@ -35,7 +35,35 @@
   font-weight: bold;
   color: @white;
   background-color: @blue;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 25px;
+  padding-left: 35px;
   z-index: 15;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+  }
+
+  &--air {
+    &::before {
+      top: 25%;
+      left: 20px;
+      background-image: url("../img/airplane.png");
+    }
+  }
+
+  &--road {
+    &::before {
+      top: 8px;
+      left: 17px;
+      background-image: url("../img/road.png");
+    }
+  }
 }
 
 .tour-list__img-wrapper {
@@ -57,6 +85,7 @@
 
 .tour-list__wrapper {
   padding: 5px;
+  border-bottom: 1px solid @grey-border;
 }
 
 .tour-list__top-wrapper {
@@ -72,6 +101,7 @@
 }
 
 .tour-list__title {
+  position: relative;
   font-size: 18px;
   font-weight: bold;
 }
@@ -105,7 +135,7 @@
   flex-shrink: 0;
   font-size: 14px;
   font-weight: bold;
-  text-align: right;  
+  text-align: right;
 }
 
 .tour-list__asteriks {
@@ -116,4 +146,26 @@
 .tour-list__nights {
   margin: 0;
   padding: 0;
+}
+
+.tour-list__rating-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.tour-list__left-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tour-list__link {
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: normal;
+  width: 30%;
 }
