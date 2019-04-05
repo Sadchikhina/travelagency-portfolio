@@ -1,0 +1,49 @@
+.statistic-list {
+  .list();
+
+  display: flex;
+  justify-content: space-between;
+  color: @white;
+}
+
+.tatistic-list__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+  }
+
+  &--client {
+    background-image: url("../img/happy-client.png");
+  }
+
+  &--member {
+    background-image: url("../img/paper-plane.png");
+  }
+
+  &--tour {
+    background-image: url("../img/flag.png");
+  }
+
+  &--award {
+    background-image: url("../img/award.png");
+  }
+}
+
+.statistic-list__numbers {
+  font-size: 50px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.statistic-list__text {
+  padding: 0;
+  margin: 0;
+}
