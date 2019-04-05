@@ -6,33 +6,42 @@
   color: @white;
 }
 
-.tatistic-list__item {
+.statistic-list__item {
   position: relative;
+  padding-left: 80px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 10px;
+    left: 20px;
     width: 60px;
     height: 60px;
     background-repeat: no-repeat;
   }
 
   &--client {
-    background-image: url("../img/happy-client.png");
+    &::before {
+      background-image: url("../img/happy-client.png");
+    }
   }
 
   &--member {
-    background-image: url("../img/paper-plane.png");
+    &::before {
+      background-image: url("../img/paper-plane.png");
+    }
   }
 
   &--tour {
-    background-image: url("../img/flag.png");
+    &::before {
+      background-image: url("../img/flag.png");
+    }
   }
 
   &--award {
-    background-image: url("../img/award.png");
+    &::before {
+      background-image: url("../img/award.png");
+    }
   }
 }
 
