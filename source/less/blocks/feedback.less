@@ -1,5 +1,27 @@
 .feedback {
   position: relative;
-  padding-top: 900px;
   z-index: 20;
+}
+
+.feedback__header {
+  text-align: center;
+}
+
+.feedback__wrapper {
+  display: flex;
+}
+
+.feedback__item {
+  text-align: center;
+}
+
+.feedback__text-wrapper {
+  font-family: "Poppins";
+  color: @white;
+  line-height: 28px;
+  width: 832px;
+
+  &--not-active {
+    display: none;
+  }
 }

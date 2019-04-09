@@ -1,38 +1,62 @@
 .memorial {
   position: relative;
-  background-image: url("../img/photo.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-top: 500px;
-  padding-bottom: 500px;
 }
 
-.memorial__bg {
-  position: absolute;
-  top: 0;
-  left: 0;
+.memorial__slider {
+  position: relative;
   width: 100%;
-  height: 50%;
-  background-color: @blue;
-  opacity: 0.4;
+  height: 1300px;
+  z-index: -20;
+}
+
+.memorial__slide {
+  position: absolute;
+  width: 100%;
+  height: 1300px;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: @blue;
+    opacity: 0.4;
+  }
+
+  &--1 {
+    background-image: url("../img/photo.jpg");
+  }
+
+  &--2 {
+    background-image: url("../img/top-tour__bg.jpg");
+    display: none;
+  }
 }
 
 .memorial__decor {
   position: absolute;
-  bottom: -100px;
+  top: 365px;
   left: 0;
   background-image: url("../img/video_bg.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
 }
 
 .memorial__video-tour {
-  position: relative;
+  position: absolute;
+  top: 200px;
+  left: 100px;
   display: flex;
   align-items: center;
-  z-index: 10;
+  z-index: 50;
 }
 
 .memorial__btn {
